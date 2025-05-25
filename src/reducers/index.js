@@ -17,6 +17,8 @@ function saveData(state=[],action){
 
 }
 
+
+
  function character(state=character_json,action){
     switch(action.type){
         case ADD_CHARACTER:
