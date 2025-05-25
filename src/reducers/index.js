@@ -40,7 +40,7 @@ function saveData(state=[],action){
 }
 //export default character;
 function addhero(id){
-    let ekhero= character_json.find((el)=>el.id==id)
+    let ekhero= character_json.find((el)=>el.id===id)
     return ekhero;
 }
 const rootReducer =combineReducers({
