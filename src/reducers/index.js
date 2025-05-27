@@ -3,6 +3,10 @@ import {ADD_CHARACTER,SAVE_DATA} from '../actions';
 import { combineReducers } from 'redux';
 
 
+
+
+
+
 function saveData(state=[],action){
     switch(action.type){
         case SAVE_DATA:
@@ -15,6 +19,8 @@ function saveData(state=[],action){
     }
 
 }
+
+
 
  function character(state=character_json,action){
     switch(action.type){
@@ -40,7 +46,7 @@ function saveData(state=[],action){
 }
 //export default character;
 function addhero(id){
-    let ekhero= character_json.find((el)=>el.id==id)
+    let ekhero= character_json.find((el)=>el.id===id)
     return ekhero;
 }
 const rootReducer =combineReducers({
