@@ -53,7 +53,7 @@ function mapStateToProps(state)
 
 
 function mapDispatchToProps (dispatch) {
-    console.log("componets-------------------->",dispatch);
+    console.log("componets-++++++++------------------->",dispatch);
     return {
     //     addHero: (id) => {
     //     dispatch(addCharacterByid(id))
